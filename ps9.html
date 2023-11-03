@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta char="viewport"
+    contant="width-device-width,initial.scale-1.0">
+    <link rel="stylesheet" href="/PS4-PS5/styles.css">
+    <title>Project Information</title>
+</head>
+<body>
+    <form id="create_account" action="/signup" method="post">
+        <fieldset id="signup">
+            <legend>Create New Account</legend>
+
+            <ol>
+                <li>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" value=""
+                     autocomplete="off" placeholder="8-10 characters" pattern="^(?=. (8,})(?=.[a-z]{(?=. *[A-Z])(?=. *[\d])(?-, *[\W]]. *s
+                     title="Password must be 8 or more characters with at least one number, an uppercase letter, and one special character>
+                </li>
+                <li>
+                    <label for="password_confirmation">Password Confirmation</label>
+                    <input id="password_confirmation" type="password"
+                      name="password_confirmation" value=""
+                      autocomplete="off" placeholder="Type your password again" 
+                      pattern="^(?-. (8,})(?-.[a) (?-.[A-Z])(?-.[\d])(?-. *[\W]). *$"
+                      title="Password confirmation must be 8 or more characters with at 
+                           least one number, an uppercase letter, and one special character"/>       
+
+                </li>
+                <li><input type="submit" value="Sign Up"></li>
+
+                
+            </ol>
+         </fieldset>
+    </form>
+              

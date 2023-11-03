@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomeCo Project Preferences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+            label{
+                margin-top:10px;
+                color:#333;
+            }
+        
+
+        input[type="text"], input[type="email"], input[type="url"], input[type="date"], input[type="number"], input[type="color"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="post" action="/project-preferences">
+
+        <h2>Project Information</h2>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="priority">Priority</label>
+        <input type="number" name="priority" id="priority" required>
+
+        <label for="estimatedHours">Estimated Hours</label>
+        <input type="number" name="estimatedHours" id="estimatedHours" required>
+
+        <label for="startDate">Start Date</label>
+        <input type="date" name="startDate" id="startDate" value="2013-12-01" required>
+
+        <label for="contactEmail">Email contact</label>
+        <input type="email" name="contactEmail" id="contactEmail" required>
+
+        <label for="stagingURL">Staging URL</label>
+        <input type="url" name="stagingURL" id="stagingURL" required>
+
+        <label for="projectColor">Project color</label>
+        <input type="color" name="projectColor" id="projectColor" required>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>

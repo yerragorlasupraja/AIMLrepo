@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Information Form</title>
+</head>
+<body>
+
+    <form method="post" action="/projects/1">
+
+        <fieldset id="personal_information">
+
+            <legend>Project Information</legend>
+
+            <label for="estimated_hours">Estimated Hours</label>
+            <input type="number" name="estimated_hours" min="0" max="1000" id="estimated_hours" required>
+
+            <ol>
+
+                <li>
+
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+
+                </li>
+
+                <li>
+
+                    <input type="submit" value="Submit">
+
+                </li>
+
+            </ol>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
+
